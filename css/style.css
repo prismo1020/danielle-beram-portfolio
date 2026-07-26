@@ -59,7 +59,8 @@ h2, h3 { font-weight: 700; }
 .hero { display: grid; grid-template-columns: 1.5fr 1fr; gap: 3.25rem; align-items: center; padding: 3.75rem 0 3rem; }
 .hero h1 { font-size: clamp(2.7rem, 6vw, 4rem); line-height: 1.02; margin: 0 0 1.1rem; }
 .hero .lead { color: var(--ink-soft); font-size: 1.14rem; max-width: 34rem; margin: 0 0 2rem; }
-.headshot { width: 88%; max-width: 340px; aspect-ratio: 1/1; object-fit: cover; justify-self: end; border-radius: 12px; border: 1px solid var(--rule); }
+.headshot-link { display: block; width: 88%; max-width: 340px; justify-self: end; cursor: zoom-in; }
+.headshot { display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--rule); }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: -0.5rem 0 2rem; }
 .button { display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: 0.65rem 1rem; border: 1px solid var(--navy); border-radius: 7px; font-weight: 700; font-size: 0.93rem; }
 .button-primary { background: var(--navy); color: #FBF8F1; }
@@ -110,7 +111,8 @@ section > h2 { font-size: 1.9rem; margin: 0 0 1.75rem; }
 .about p + p { margin-top: 1.1rem; }
 .about .voice { font-family: var(--display); font-weight: 600; font-size: 1.3rem; color: var(--navy); letter-spacing: -0.015em; line-height: 1.3; max-width: 38rem; margin: 0 0 1.4rem; }
 .about-photo { margin: 0; }
-.about-photo img { display: block; width: 100%; aspect-ratio: 4/3; object-fit: cover; object-position: 50% 42%; border-radius: 10px; border: 1px solid var(--rule); }
+.about-photo-link { display: block; cursor: zoom-in; }
+.about-photo img { display: block; width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--rule); }
 .about-photo figcaption { margin-top: 0.7rem; color: var(--ink-soft); font-size: 0.78rem; line-height: 1.4; letter-spacing: 0.02em; }
 
 /* Case study */
@@ -167,7 +169,7 @@ footer.site-foot a:hover { color: #F4C4AF; }
 
 @media (max-width: 760px) {
   .hero { grid-template-columns: 1fr; gap: 2rem; padding: 2.5rem 0; }
-  .headshot { width: 82%; max-width: 230px; justify-self: start; }
+  .headshot-link { width: 82%; max-width: 230px; justify-self: start; }
   .site nav { gap: 1.1rem; }
   .statline .stat { min-width: 46%; flex: 0 0 46%; border-right: 0; }
   .leadership { grid-template-columns: 1fr; gap: 1.5rem; }
