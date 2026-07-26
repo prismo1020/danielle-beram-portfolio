@@ -71,6 +71,7 @@ h2, h3 { font-weight: 700; }
 /* Stat line */
 .statline { display: flex; flex-wrap: wrap; border-top: 2px solid var(--navy); }
 .statline .stat { flex: 1; min-width: 92px; padding: 1.35rem 1.2rem 1.1rem 0; border-right: 1px solid var(--rule); }
+.statline .stat + .stat { padding-left: 1.5rem; }
 .statline .stat:last-child { border-right: 0; }
 .statline .num { font-family: var(--display); font-weight: 800; font-size: 2.15rem; color: var(--terra-deep); line-height: 1; letter-spacing: -0.03em; }
 .statline .lbl { font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.09em; color: var(--ink-soft); margin-top: 0.45rem; font-weight: 500; }
@@ -172,6 +173,7 @@ footer.site-foot a:hover { color: #F4C4AF; }
   .headshot-link { width: 82%; max-width: 230px; justify-self: start; }
   .site nav { gap: 1.1rem; }
   .statline .stat { min-width: 46%; flex: 0 0 46%; border-right: 0; }
+  .statline .stat + .stat { padding-left: 0; }
   .leadership { grid-template-columns: 1fr; gap: 1.5rem; }
   .section-heading h2 { max-width: 18ch; }
   .leadership-grid { grid-template-columns: 1fr; gap: 1rem; }
