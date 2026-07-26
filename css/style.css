@@ -105,9 +105,13 @@ section > h2 { font-size: 1.9rem; margin: 0 0 1.75rem; }
 .card:hover .more { color: var(--terra); }
 
 /* About */
+.about-grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr); gap: 2.75rem; align-items: start; }
 .about p { max-width: 42rem; }
 .about p + p { margin-top: 1.1rem; }
 .about .voice { font-family: var(--display); font-weight: 600; font-size: 1.3rem; color: var(--navy); letter-spacing: -0.015em; line-height: 1.3; max-width: 38rem; margin: 0 0 1.4rem; }
+.about-photo { margin: 0; }
+.about-photo img { display: block; width: 100%; aspect-ratio: 4/3; object-fit: cover; object-position: 50% 42%; border-radius: 10px; border: 1px solid var(--rule); }
+.about-photo figcaption { margin-top: 0.7rem; color: var(--ink-soft); font-size: 0.78rem; line-height: 1.4; letter-spacing: 0.02em; }
 
 /* Case study */
 .cs-hero { padding: 3.25rem 0 2.25rem; }
@@ -170,6 +174,8 @@ footer.site-foot a:hover { color: #F4C4AF; }
   .section-heading h2 { max-width: 18ch; }
   .leadership-grid { grid-template-columns: 1fr; gap: 1rem; }
   .leadership-grid article { padding-top: 1.25rem; }
+  .about-grid { grid-template-columns: 1fr; gap: 1.75rem; }
+  .about-photo { max-width: 34rem; }
   .diagram { overflow-x: auto; }
   .diagram svg { min-width: 560px; }
   .glance, .glance tbody, .glance tr, .glance td { display: block; width: 100%; }
