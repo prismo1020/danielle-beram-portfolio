@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Building the operating system for new store openings | Danielle Beram</title>
+<meta name="description" content="How Danielle Beram created a new-store opening process from scratch, built the production system to run it, and improved readiness scores.">
+<meta property="og:title" content="Building the operating system for new store openings">
+<meta property="og:description" content="No process, no measurement system, and no engineering team, so Danielle Beram built all three.">
+<meta property="og:type" content="article">
+<meta property="og:image" content="assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="wrap">
+  <header class="site">
+    <a class="brand" href="index.html" style="text-decoration:none;">Danielle Beram</a>
+    <nav>
+      <a href="index.html#work">Work</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="cs-hero">
+    <p class="eyebrow">Product ownership · Operational enablement</p>
+    <h1>Building the operating system for new store openings</h1>
+    <p class="hook">There was no standardized process to digitize. I created the process from scratch, built the production system that made it executable, and introduced the data needed to improve every opening that followed.</p>
+    <table class="glance">
+      <tr><td>Role</td><td>Product owner, process architect, application builder, and rollout lead</td></tr>
+      <tr><td>Challenge</td><td>No standardized opening-support process, no consistent readiness measurement, and no engineering resources</td></tr>
+      <tr><td>What I did</td><td>Created the operating process, encoded it into a secure production portal, and built the measurement model from the ground up</td></tr>
+      <tr><td>Result</td><td>Average technical readiness improved 35%; operational and guest readiness improved 28% across the first five openings</td></tr>
+    </table>
+  </div>
+
+  <section class="cs-section" style="border-top:0; padding-top:1.5rem;">
+    <h2>The challenge</h2>
+    <p>New Store Opening events are short, operationally intense, and full of decisions that matter after the coach leaves. Coaches develop multiple trainees, document readiness, complete recurring reviews, coordinate with local leadership, and formally close the event with the franchise partner.</p>
+    <p>Before the portal, those activities had no single digital system, and there was no fully defined process underneath them. Critical knowledge lived in spreadsheets, paper, and individual coaches' heads. Different openings could be coached, documented, and evaluated differently, leaving the organization with limited visibility into readiness and little usable data for improving the next launch.</p>
+    <p>I did not automate an established workflow. I defined what good opening support should look like, established the standards and decision points, and then built the system that made the new process repeatable.</p>
+  </section>
+
+  <section class="cs-section">
+    <h2>My role</h2>
+    <p>I identified the gap and took ownership without being assigned the work. No requirements document, process specification, product team, engineering team, or development headcount existed.</p>
+    <p>I first created the operating model: what coaches should do across the five-day arc, what trainees must demonstrate, what the franchise partner must confirm, what information leaders need each day, and what evidence should survive after the opening closes.</p>
+    <p>I then translated that model into the information architecture, workflows, required fields, relational data, access boundaries, confirmation behavior, lifecycle rules, reporting, and field guardrails. I personally built and shipped the application.</p>
+  </section>
+
+  <section class="cs-section">
+    <h2>The product</h2>
+    <p>The portal is the operational process made executable. It tells coaches what must happen, when it must happen, what readiness looks like, what requires evidence, and what the organization should learn afterward.</p>
+
+    <div class="feature-grid">
+      <article>
+        <span>01</span>
+        <h3>Prepare</h3>
+        <p>Day 0 readiness checks, opening setup, dates, notes, and team roster.</p>
+      </article>
+      <article>
+        <span>02</span>
+        <h3>Facilitate</h3>
+        <p>Five-day agenda, learning objectives, embedded coach guidance, and resources.</p>
+      </article>
+      <article>
+        <span>03</span>
+        <h3>Verify</h3>
+        <p>Per-trainee competency tracking, attendance, progress, and formal sign-offs.</p>
+      </article>
+      <article>
+        <span>04</span>
+        <h3>Communicate</h3>
+        <p>Structured daily recaps with a ready-to-share Slack preview.</p>
+      </article>
+      <article>
+        <span>05</span>
+        <h3>Review</h3>
+        <p>Partner checkpoints, leadership confirmation, and opening-weekend reporting.</p>
+      </article>
+      <article>
+        <span>06</span>
+        <h3>Learn</h3>
+        <p>Completed-opening history and administrative export for organizational review.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <h2>The approach</h2>
+
+    <h3>Encoded the coaching model, not just the data</h3>
+    <p>Every field and workflow reflects a decision about what coaches must do, what trainees must demonstrate, what requires confirmation, and what the organization needs to retain. I converted fragmented institutional knowledge into one explicit, repeatable operating standard.</p>
+
+    <h3>Designed secure access around field ownership</h3>
+    <p>The application uses Supabase authentication, Postgres, and database-level row security. Coaches work only with openings assigned to them, while administrators retain organizational visibility. Related records inherit access through their parent opening, keeping the permission model aligned with operational ownership.</p>
+
+    <h3>Preserved the integrity of formal confirmations</h3>
+    <p>Stable record identifiers prevent duplicate checklist and sign-off entries. Names, dates, and first-confirmation timestamps create a more dependable operational history without silently replacing the original confirmation moment.</p>
+
+    <h3>Designed for shared field devices</h3>
+    <p>The portal includes a shared-iPad warning, prominent sign-out controls, automatic sign-out after inactivity, required-field validation, and guardrails that prevent actions from being recorded without an active opening.</p>
+
+    <h3>Chose maintainability over unnecessary complexity</h3>
+    <p>I built the front end in browser-native HTML, CSS, and JavaScript, with Supabase as the managed backend and GitHub Pages for deployment. With no framework, build system, or dependency tree, the application remains practical for a solo product owner to maintain.</p>
+
+    <h3>Made every opening measurable</h3>
+    <p>The portal captures competency performance, readiness checks, scenario-based assessment results, daily operational recaps, process-confusion escalations, formal confirmations, and opening outcomes in a consistent structure. For the first time, those signals could be compared across openings and used to change the curriculum, coaching emphasis, and readiness standards for future launches.</p>
+  </section>
+
+  <section class="cs-section">
+    <h2>How the system fits together</h2>
+    <div class="system-map" aria-label="Simplified NSO Coach Portal system architecture">
+      <div class="system-node system-users">
+        <strong>Field users</strong>
+        <span>Coaches · administrators</span>
+      </div>
+      <span class="system-arrow" aria-hidden="true">↓</span>
+      <div class="system-node system-product">
+        <strong>NSO Coach Portal</strong>
+        <span>Prepare · facilitate · verify · recap · close</span>
+      </div>
+      <span class="system-arrow" aria-hidden="true">↓</span>
+      <div class="system-split">
+        <div class="system-node">
+          <strong>Supabase</strong>
+          <span>Authentication · Postgres · row security</span>
+        </div>
+        <div class="system-node">
+          <strong>Organizational view</strong>
+          <span>Admin access · completed openings · CSV export</span>
+        </div>
+      </div>
+      <p class="figcap">Sanitized architecture view · production configuration and identifiers omitted</p>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <h2>Product iteration</h2>
+    <p>The portal has evolved through multiple releases based on real field use and stakeholder input. Improvements have included shared-device protections, dual-party confirmations, planned-versus-actual date capture, variance notes, expanded setup, workflow guardrails, leadership training, scorecards, and broader administrative export.</p>
+    <p>These were not isolated feature requests. Each iteration responded to a gap in how an opening was prepared, coached, documented, or reviewed.</p>
+  </section>
+
+  <section class="cs-section outcome-section">
+    <p class="eyebrow">Measured impact</p>
+    <h2>The process did not just become more consistent. Readiness improved.</h2>
+    <div class="outcome-list">
+      <div class="outcome-row">
+        <strong>35%</strong>
+        <div>
+          <h3>Higher average technical readiness</h3>
+          <p>Measured through secret-shop scoring, scenario-based assessments, and process-confusion escalation tickets.</p>
+        </div>
+      </div>
+      <div class="outcome-row">
+        <strong>28%</strong>
+        <div>
+          <h3>Higher operational and guest readiness</h3>
+          <p>Measured through the same combined evidence: observed performance, scenario execution, and process-confusion escalations.</p>
+        </div>
+      </div>
+    </div>
+    <p>Across the first five openings using the portal, technical and operational readiness were not merely maintained during standardization. They improved. The openings also saw fewer process-confusion escalations, fewer opening-weekend refunds, and stronger customer-review patterns.</p>
+    <p>The trainers using the system have become some of its strongest advocates, providing enthusiastic feedback about the clarity and usability of the workflow.</p>
+    <p class="note">Readiness improvements are average changes observed across the first five portal-supported openings using the stated measurement sources.</p>
+  </section>
+
+  <section class="cs-section">
+    <h2>From isolated openings to a learning system</h2>
+    <p>Previously, one opening generated activity but little structured organizational learning. The portal changed that. Sign-offs, assessments, recaps, escalations, partner reviews, and opening outcomes now create a shared evidence base.</p>
+    <p>That data makes it possible to identify recurring readiness gaps, strengthen future agendas, refine competency standards, target coach guidance, and compare what changed from one opening to the next. The result is not only a better-run opening. It is an opening process that can keep getting better.</p>
+  </section>
+
+  <section class="cs-section">
+    <h2>What this demonstrates</h2>
+    <ul>
+      <li><strong>Product ownership:</strong> identifying an unmet need, defining the product, shipping it, and continuing to improve it.</li>
+      <li><strong>Systems thinking:</strong> connecting curriculum, field workflow, permissions, lifecycle states, confirmations, and reporting.</li>
+      <li><strong>Applied domain expertise:</strong> turning the reality of coaching an opening into a usable digital operating model.</li>
+      <li><strong>Technical breadth:</strong> designing relational data, implementing access controls, building the interface and data layer, and managing deployment.</li>
+      <li><strong>AI-accelerated delivery:</strong> using Claude Code to increase implementation speed while retaining ownership of requirements, product judgment, testing, and quality.</li>
+    </ul>
+  </section>
+
+  <section class="cs-section">
+    <h2>What I can show</h2>
+    <div class="showcase">
+      <p style="margin-top:0;">The production portal contains employee and operational information, so public evidence is being rebuilt with fictional demonstration data. The portfolio version will include:</p>
+      <ul style="margin-bottom:0;">
+        <li>A sanitized portal overview</li>
+        <li>A demonstration competency tracker</li>
+        <li>A simplified field workflow and data model</li>
+        <li>A short walkthrough using fictional users and opening details</li>
+      </ul>
+    </div>
+    <a class="backlink" href="index.html#work">&larr; Back to all work</a>
+  </section>
+</div>
+
+<footer class="site-foot" id="contact">
+  <div class="wrap">
+    <div>
+      <h2>Let's talk.</h2>
+      <p>Open to global L&amp;D, enablement, and learning strategy leadership roles.</p>
+    </div>
+    <div class="contact-list">
+      <a href="mailto:danielle.beram1@gmail.com">danielle.beram1@gmail.com</a>
+      <a href="https://linkedin.com/in/danielle-beram">linkedin.com/in/danielle-beram</a>
+      <span style="color:#8f97ab;">San Antonio, TX</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

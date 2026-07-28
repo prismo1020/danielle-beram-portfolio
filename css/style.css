@@ -154,6 +154,53 @@ section > h2 { font-size: 1.9rem; margin: 0 0 1.75rem; }
 .backlink { display: inline-block; margin: 2.5rem 0 0; color: var(--ink-soft); font-size: 0.95rem; font-weight: 500; }
 .backlink:hover { color: var(--terra-deep); }
 
+/* NSO case study */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.85rem;
+  margin-top: 1.8rem;
+  max-width: 48rem;
+}
+.feature-grid article { background: var(--card); border: 1px solid var(--rule); border-radius: 9px; padding: 1.25rem; }
+.feature-grid article > span { color: var(--terra-deep); font-family: var(--display); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.08em; }
+.feature-grid h3 { color: var(--navy); margin: 0.35rem 0 0.45rem; }
+.feature-grid p { color: var(--ink-soft); font-size: 0.84rem; line-height: 1.5; margin: 0; }
+.system-map {
+  background: var(--navy);
+  border-radius: 10px;
+  color: #F6F1E7;
+  max-width: 46rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+.system-node { background: #FBF8F1; border: 1px solid #D9CBB2; border-radius: 8px; color: var(--ink); padding: 1rem; }
+.system-node strong { color: var(--navy); display: block; font-family: var(--display); }
+.system-node span { color: var(--ink-soft); display: block; font-size: 0.76rem; margin-top: 0.25rem; }
+.system-product { border-color: #E9A184; }
+.system-arrow { color: #E9A184; display: block; font-size: 1.25rem; line-height: 1; padding: 0.55rem; }
+.system-split { display: grid; grid-template-columns: 1fr 1fr; gap: 0.85rem; }
+.system-map .figcap { color: #B9C0D2; margin: 1rem 0 0; text-align: left; }
+.outcome-section > h2 { font-size: clamp(2rem, 4.5vw, 3.25rem); line-height: 1.08; max-width: 19ch; }
+.outcome-list { border-top: 2px solid var(--navy); margin: 2rem 0; max-width: 48rem; }
+.outcome-row {
+  display: grid;
+  grid-template-columns: 9rem 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  border-bottom: 1px solid var(--rule);
+  padding: 1.6rem 0;
+}
+.outcome-row > strong {
+  color: var(--terra-deep);
+  font-family: var(--display);
+  font-size: clamp(3rem, 7vw, 5.25rem);
+  letter-spacing: -0.06em;
+  line-height: 1;
+}
+.outcome-row h3 { color: var(--navy); font-size: 1.15rem; margin: 0 0 0.35rem; }
+.outcome-row p { color: var(--ink-soft); font-size: 0.9rem; line-height: 1.55; margin: 0; }
+
 /* Diagrams */
 .diagram { background: var(--card); border: 1px solid var(--rule); border-radius: 10px; padding: 1.75rem 1.85rem; margin: 2.25rem 0; max-width: 46rem; }
 .diagram svg { width: 100%; height: auto; display: block; }
@@ -191,6 +238,8 @@ footer.site-foot a:hover { color: #F4C4AF; }
   .artifact-row { grid-template-columns: 1fr; gap: 0.3rem; }
   .artifact-tag { justify-self: start; }
   .storyboard { grid-template-columns: 1fr; }
+  .feature-grid, .system-split { grid-template-columns: 1fr; }
+  .outcome-row { grid-template-columns: 1fr; gap: 0.65rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {

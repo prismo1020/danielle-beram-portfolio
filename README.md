@@ -1,14 +1,14 @@
-# Danielle Beram — Leadership Portfolio
+# Danielle Beram: Leadership Portfolio
 
 A static portfolio site: a landing page plus one page per case study. No build step or dependencies are required. Open `index.html` to begin.
 
 ## Files
 
-- `index.html` — landing page (hero, selected work, about, contact)
-- `training.html`, `apollo.html`, `elearning.html` — case study pages
-- `css/style.css` — all styling (edit colors and type here)
-- `assets/headshot.png` — portrait
-- `assets/og.png` — social sharing preview
+- `index.html`: landing page (hero, selected work, about, contact)
+- `training.html`, `apollo.html`, `elearning.html`: case study pages
+- `css/style.css`: all styling (edit colors and type here)
+- `assets/headshot.png`: portrait
+- `assets/og.png`: social sharing preview
 
 ## Preview locally
 
