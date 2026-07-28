@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Apollo: an AI support chatbot for 90 locations — Danielle Beram</title>
-<meta name="description" content="Building and governing an AI support chatbot grounded in a retrieval-optimized knowledge base, serving 90 locations in five languages.">
+<title>Apollo: an AI support chatbot for 90 locations | Danielle Beram</title>
+<meta name="description" content="How Danielle Beram built an AI help tool for 90 locations in five languages.">
 <meta property="og:title" content="Apollo: an AI support chatbot for 90 locations">
-<meta property="og:description" content="How Danielle Beram built and governs an AI-enabled knowledge experience across 90 locations and five languages.">
+<meta property="og:description" content="Apollo gives frontline teams clear answers from approved company content during a shift.">
 <meta property="og:type" content="article">
 <meta property="og:image" content="assets/og.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -30,33 +30,33 @@
   <div class="cs-hero">
     <p class="eyebrow">AI enablement</p>
     <h1>Apollo: an AI support chatbot for 90 locations</h1>
-    <p class="hook">Giving frontline staff instant, accurate operational answers in the middle of a shift, in five languages.</p>
+    <p class="hook">When you’re running a live shift, you can’t wait on a support ticket. Apollo gives staff an answer from approved company content.</p>
     <table class="glance">
-      <tr><td>Role</td><td>Product strategy, knowledge architecture, governance, and network adoption</td></tr>
+      <tr><td>Role</td><td>Product direction and content ownership</td></tr>
       <tr><td>Challenge</td><td>Frontline staff had no fast, consistent way to get operational answers mid-shift</td></tr>
-      <tr><td>What I did</td><td>Built and now govern Apollo, an AI chatbot grounded in a retrieval-optimized knowledge base</td></tr>
-      <tr><td>Result</td><td>Real-time guidance across 90 locations and 5 languages; a contributor to a broader enablement-system decline in process-confusion escalations</td></tr>
+      <tr><td>What I did</td><td>Built Apollo and the source library behind it</td></tr>
+      <tr><td>Result</td><td>Teams at 90 locations can get help in 5 languages. Process-confusion escalations fell as training and support improved.</td></tr>
     </table>
   </div>
 
   <section class="cs-section" style="border-top:0; padding-top:1.5rem;">
     <h2>The challenge</h2>
-    <p>When a game guide or manager hit an operational question in the middle of a live shift, their options were all slow. Escalate a support ticket and wait. Interrupt a busy manager. Or dig through scattered SOPs across multiple platforms, in the middle of running the floor.</p>
-    <p>Across 90 corporate and franchise locations operating in five languages, that added up to a constant stream of avoidable escalations and inconsistent answers, where the response you got depended on who you happened to ask. Knowledge existed, but it was not reachable at the moment of need. Process confusion accounted for roughly 40% of all escalated tickets.</p>
+    <p>When you hit a question during a live shift, you need an answer right away. Staff had to open a support ticket or interrupt a manager. They could search through SOPs, but those files lived across several tools.</p>
+    <p>Across 90 locations, staff got different answers depending on who they asked. Process confusion caused about 40% of all escalated tickets.</p>
   </section>
 
   <section class="cs-section">
     <h2>My role</h2>
-    <p>I set the product direction for Apollo and lead the operating model behind it: use-case definition, knowledge architecture, answer boundaries, content ownership, governance, and adoption across the network. I also built the initial implementation, which gave me direct insight into how information structure and frontline behavior affect answer quality.</p>
-    <p>The work requires ongoing partnership with operations, product, support, and subject-matter owners. My role is to turn those inputs into one trusted experience while maintaining clear accountability for what Apollo can answer and how quickly its source content changes.</p>
+    <p>I chose what Apollo should answer and how it should use company content. I built the first version and saw how the way staff ask a question can change the answer they get.</p>
+    <p>I work with subject owners across the company. Each source has a clear owner, and new information reaches Apollo as the work changes.</p>
   </section>
 
   <section class="cs-section">
     <h2>The approach</h2>
-    <p>The goal was not just a chatbot. It was a reliable answer at the moment of need, which meant the retrieval had to be as good as the interface.</p>
+    <p>A good answer starts with clear source content. The chat window is only the last step.</p>
 
     <div class="diagram" tabindex="0" aria-label="Scrollable diagram: Apollo knowledge retrieval flow">
-      <svg viewBox="0 0 720 210" role="img" aria-label="A staff question goes to Apollo, which retrieves from a governed knowledge base of retrieval-optimized snippets and returns a grounded answer instantly.">
+      <svg viewBox="0 0 720 210" role="img" aria-label="A staff question goes to Apollo. Apollo finds the right approved source and returns the answer.">
         <defs>
           <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
             <path d="M0 0 L10 5 L0 10 z" fill="#1E2C4F"/>
@@ -77,7 +77,7 @@
         <rect x="524" y="46" width="188" height="66" rx="8" fill="#FBF8F1" stroke="#D9CBB2"/>
         <text x="618" y="72" text-anchor="middle" font-family="Manrope, sans-serif" font-size="14" font-weight="700" fill="#1E2C4F">Knowledge base</text>
         <text x="618" y="90" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#6B6157">retrieval-optimized,</text>
-        <text x="618" y="103" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#6B6157">governed &amp; kept current</text>
+        <text x="618" y="103" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#6B6157">approved &amp; kept current</text>
 
         <line x1="200" y1="79" x2="262" y2="79" stroke="#1E2C4F" stroke-width="2" marker-end="url(#ah)"/>
         <text x="231" y="66" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#6B6157">question</text>
@@ -87,29 +87,29 @@
         <path d="M618 112 L618 168 L102 168 L102 116" fill="none" stroke="#BC5A34" stroke-width="2" marker-end="url(#aht)"/>
         <text x="360" y="162" text-anchor="middle" font-family="Inter, sans-serif" font-size="11.5" font-weight="600" fill="#9E4525">grounded answer, delivered instantly</text>
       </svg>
-      <p class="figcap">Answers come from governed source content, not open-ended generation, so they stay accurate and consistent</p>
+      <p class="figcap">Apollo points staff to approved content, so each location gets the same answer.</p>
     </div>
   </section>
 
   <section class="cs-section">
     <h2>The approach, continued</h2>
-    <h3>Architected the knowledge base for retrieval, not just storage</h3>
-    <p>I structured the underlying content into governed, retrieval-optimized snippets so Apollo returns precise, relevant answers instead of vague or partial ones. Good AI answers start with well-organized source content, so I treated the knowledge base as the real product.</p>
-    <h3>Built the assistant on Chatbase, grounded in that knowledge base</h3>
-    <p>Apollo answers from governed source material rather than open-ended generation, which keeps responses accurate, consistent, and defensible. Staff get the same correct answer regardless of which location or language they are working in.</p>
-    <h3>Built a governance model so answers stay trustworthy</h3>
-    <p>I define what Apollo can and cannot answer, coordinate ownership of the 300-plus resources behind it, and maintain the guardrails that prevent stale or off-scope responses. An AI assistant is only as good as the discipline behind its content, so governance is a permanent operating rhythm, not a launch task.</p>
-    <h3>Deployed network-wide and multilingual</h3>
-    <p>Apollo serves all 90 locations in five languages, putting the same quality of answer in front of every staff member on every shift.</p>
+    <h3>Break long SOPs into focused answers</h3>
+    <p>I split long documents into short entries that answer one question at a time. Each entry has a clear title and owner. That makes it easier for Apollo to find the right instruction.</p>
+    <h3>Use approved company content</h3>
+    <p>Apollo uses source material the company has reviewed. Staff can trace an answer back to that source when they need more detail.</p>
+    <h3>Keep each answer current</h3>
+    <p>Each of the 300-plus resources has an owner. I review changes and update Apollo when a process changes.</p>
+    <h3>Make it available to every store</h3>
+    <p>Apollo serves all 90 locations in five languages.</p>
 
     <div class="evidence">
       <p class="eyebrow">Sanitized artifact</p>
-      <h3>Grounded-answer pattern</h3>
-      <p>A representative answer structure using generic operational content. It shows the concise response, action boundary, and visible source pattern used to support trust.</p>
+      <h3>Example answer</h3>
+      <p>Here’s how Apollo answers a common question and shows the source. I used generic content for this example.</p>
       <div class="artifact">
         <div class="answer-card">
-          <strong>How should I prepare the opening checklist?</strong>
-          <p>Complete the safety and equipment checks before the first guest arrival. If an item fails inspection, pause that station and follow the escalation path rather than attempting an unapproved workaround.</p>
+          <p>How should I prepare the opening checklist?</p>
+          <p>Complete the safety and equipment checks before the first guest arrives. If an item fails, pause that station and follow the escalation steps.</p>
           <div class="answer-source">Source: Opening standards · reviewed by Operations · example content</div>
         </div>
       </div>
@@ -134,25 +134,25 @@
         <path d="M312 70 C 380 70, 400 150, 438 176" fill="none" stroke="#9E4525" stroke-width="1.6" stroke-dasharray="4 4"/>
         <text x="392" y="104" text-anchor="middle" font-family="Manrope, sans-serif" font-size="15" font-weight="700" fill="#9E4525">&asymp;90% fewer</text>
       </svg>
-      <p class="figcap">System-wide result across training, knowledge governance, and Apollo—not attributed to Apollo alone</p>
+      <p class="figcap">The drop reflects the full training and support system. Apollo is one part of it.</p>
     </div>
 
     <ul>
-      <li><strong>Real-time operational guidance across 90 locations and 5 languages</strong>, available the instant a question comes up rather than after a ticket cycle.</li>
-      <li><strong>Contributed to a system-wide decline in process-confusion escalations from roughly 40% to about 5%.</strong> This result reflects the combined effect of training redesign, knowledge governance, and Apollo; it is not attributed to the chatbot alone.</li>
-      <li><strong>Consistent answers across the network.</strong> The response no longer depends on which manager is nearby or which language a location operates in.</li>
-      <li><strong>Less load on managers and the support team</strong>, who were freed from repetitive frontline questions to focus on higher-value work.</li>
+      <li>Staff at 90 locations can get help in five languages during a shift.</li>
+      <li>Process-confusion escalations fell from about 40% to about 5% as the full training and support system improved.</li>
+      <li>Each location gets the same approved answer.</li>
+      <li>Managers and support staff spend less time answering repeat questions.</li>
     </ul>
   </section>
 
   <section class="cs-section">
     <h2>What I can show</h2>
     <div class="showcase">
-      <p style="margin-top:0;">Because the content behind Apollo is proprietary, this case study leads with the architecture and the results. As supporting proof I can share sanitized versions on request:</p>
+      <p style="margin-top:0;">I can’t post the company content here. If you’d like to see the work, I can share these examples with the company details removed:</p>
       <ul style="margin-bottom:0;">
-        <li>A redacted view of the Apollo chat interface answering a generic question</li>
-        <li>A sample knowledge-base snippet in my retrieval-optimized format with placeholder content</li>
-        <li>A diagram of how Apollo retrieves from the governed knowledge base to produce a grounded answer</li>
+        <li>A redacted Apollo chat</li>
+        <li>A sample source entry with placeholder content</li>
+        <li>A map of how Apollo finds an answer</li>
       </ul>
     </div>
     <a class="backlink" href="index.html#work">&larr; Back to all work</a>
@@ -163,7 +163,7 @@
   <div class="wrap">
     <div>
       <h2>Let's talk.</h2>
-      <p>Open to global L&amp;D, enablement, and learning strategy leadership roles.</p>
+      <p>If you’re hiring a global L&amp;D leader, I’d be glad to talk.</p>
     </div>
     <div class="contact-list">
       <a href="mailto:danielle.beram1@gmail.com">danielle.beram1@gmail.com</a>
