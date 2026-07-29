@@ -136,6 +136,12 @@ strong { font-weight: 650; }
 .site nav { display: flex; align-items: center; gap: 1.5rem; }
 .site nav a { color: var(--ink-soft); font-size: 0.92rem; font-weight: 550; text-decoration: none; }
 .site nav a:hover { color: var(--navy); }
+.nav-email {
+  color: var(--navy);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  user-select: all;
+}
 .site nav .nav-cta {
   border: 1px solid var(--navy);
   border-radius: 999px;
@@ -186,6 +192,9 @@ strong { font-weight: 650; }
 }
 
 .hero-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+.hero-email { color: var(--ink-soft); font-family: var(--mono); font-size: 0.76rem; margin: 1rem 0 0; }
+.hero-email strong { color: var(--signal-dark); font-family: var(--body); font-size: 0.72rem; letter-spacing: 0.08em; margin-right: 0.4rem; text-transform: uppercase; }
+.hero-email span { color: var(--navy); user-select: all; }
 
 .portrait-stage {
   position: relative;
@@ -439,6 +448,7 @@ strong { font-weight: 650; }
 .contact-list { display: flex; flex-direction: column; align-items: flex-start; gap: 0.45rem; }
 .contact-list a { color: #fff; font-weight: 600; }
 .contact-list span { color: #ffe3da; }
+.contact-list .contact-email { color: #fff; font-family: var(--mono); font-size: 0.88rem; user-select: all; }
 
 /* Case studies */
 .case-main { padding-bottom: 2rem; }
@@ -546,6 +556,7 @@ strong { font-weight: 650; }
   .brand-name { display: none; }
   .site nav { gap: 0.9rem; }
   .site nav a { font-size: 0.82rem; }
+  .nav-email { display: none; }
   .site nav a[href="#about"], .case-header nav a[href="index.html#about"] { display: none; }
   .hero { padding: 3.8rem 0 3rem; }
   .hero h1 { font-size: clamp(3.15rem, 15vw, 5rem); }
