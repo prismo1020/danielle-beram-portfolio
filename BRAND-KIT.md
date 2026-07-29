@@ -57,18 +57,18 @@ Strategy that becomes something people can use.
 
 ## Typography
 
-### Newsreader
+### Space Grotesk
 
 Use for:
 
 - Major headlines
-- Pull quotations
 - Large outcomes
+- Section titles
 - Narrative emphasis
 
-Newsreader brings editorial authority and humanity. It keeps the brand from feeling like another technology startup.
+Space Grotesk gives the brand a contemporary product-leadership voice without losing clarity or warmth.
 
-### IBM Plex Sans
+### DM Sans
 
 Use for:
 
@@ -78,7 +78,7 @@ Use for:
 - Product and case-study descriptions
 - Data explanations
 
-IBM Plex Sans is precise and highly readable without feeling cold.
+DM Sans is clean, open, and highly readable. Its softer geometry keeps the modern system from feeling cold.
 
 ### IBM Plex Mono
 
@@ -149,4 +149,3 @@ Avoid:
 3. She owns strategy and implementation.
 4. People use what she builds.
 5. Performance improves and becomes measurable.
-

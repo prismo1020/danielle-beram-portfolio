@@ -11,8 +11,8 @@
   --blue: #3478f6;
   --green: #15866a;
   --rule: #d9d2c5;
-  --display: "Newsreader", Georgia, serif;
-  --body: "IBM Plex Sans", system-ui, sans-serif;
+  --display: "Space Grotesk", system-ui, sans-serif;
+  --body: "DM Sans", system-ui, sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, monospace;
   --maxw: 1200px;
   --radius: 18px;
@@ -176,7 +176,7 @@ strong { font-weight: 650; }
 }
 
 .hero h1 { max-width: 10ch; }
-.hero h1 em { color: var(--signal); font-style: italic; font-weight: 500; }
+.hero h1 em { color: var(--signal); font-style: normal; font-weight: 650; }
 .hero .lead {
   color: var(--ink-soft);
   font-size: clamp(1.08rem, 1.6vw, 1.3rem);
