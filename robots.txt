@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://prismo1020.github.io/danielle-beram-portfolio/sitemap.xml
