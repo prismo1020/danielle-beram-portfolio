@@ -5,28 +5,35 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Building the operating system for new store openings | Danielle Beram</title>
 <meta name="description" content="How Danielle Beram created a new-store opening process from scratch, built the production system to run it, and improved readiness scores.">
+<link rel="canonical" href="https://prismo1020.github.io/danielle-beram-portfolio/nso.html">
 <meta property="og:title" content="Building the operating system for new store openings">
 <meta property="og:description" content="No process, no measurement system, and no engineering team, so Danielle Beram built all three.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="assets/og.png">
+<meta property="og:url" content="https://prismo1020.github.io/danielle-beram-portfolio/nso.html">
+<meta property="og:image" content="https://prismo1020.github.io/danielle-beram-portfolio/assets/og-v2.png">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#142a52">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<div class="wrap">
-  <header class="site">
-    <a class="brand" href="index.html" style="text-decoration:none;">Danielle Beram</a>
-    <nav>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="site-shell">
+  <header class="site wrap case-header">
+    <a class="brand" href="index.html" aria-label="Danielle Beram, home"><span class="brand-mark" aria-hidden="true">DB</span><span class="brand-name">Danielle Beram</span></a>
+    <nav aria-label="Primary navigation">
       <a href="index.html#work">Work</a>
       <a href="index.html#about">About</a>
-      <a href="index.html#contact">Contact</a>
+      <a class="nav-cta" href="index.html#contact">Contact</a>
     </nav>
   </header>
+</div>
 
+<main id="main" class="case-main">
+<div class="wrap">
   <div class="cs-hero">
     <p class="eyebrow">Product ownership · Operational enablement</p>
     <h1>Building the operating system for new store openings</h1>
@@ -35,8 +42,12 @@
       <tr><td>Role</td><td>Product owner, process architect, application builder, and rollout lead</td></tr>
       <tr><td>Challenge</td><td>No standardized opening-support process, no consistent readiness measurement, and no engineering resources</td></tr>
       <tr><td>What I did</td><td>Created the operating process, encoded it into a secure production portal, and built the measurement model from the ground up</td></tr>
-      <tr><td>Result</td><td>Average technical readiness improved 35%; operational and guest readiness improved 28% across the first five openings</td></tr>
+      <tr><td>Result</td><td>Average readiness rose from a 56 historical baseline to 83.2 across the first five platform-supported openings</td></tr>
     </table>
+    <div class="hero-actions" style="margin-top:1.5rem;">
+      <a class="button button-primary" href="https://prismo1020.github.io/nso-portal/demo/" target="_blank" rel="noopener">Explore the sanitized interactive demo</a>
+      <a class="button button-secondary" href="#measured-impact">See the results</a>
+    </div>
   </div>
 
   <section class="cs-section" style="border-top:0; padding-top:1.5rem;">
@@ -115,7 +126,7 @@
 
   <section class="cs-section">
     <h2>How the system fits together</h2>
-    <div class="system-map" aria-label="Simplified NSO Coach Portal system architecture">
+    <div class="system-map" role="img" aria-label="Simplified NSO Coach Portal system architecture">
       <div class="system-node system-users">
         <strong>Field users</strong>
         <span>Coaches · administrators</span>
@@ -146,10 +157,17 @@
     <p>These were not isolated feature requests. Each iteration responded to a gap in how an opening was prepared, coached, documented, or reviewed.</p>
   </section>
 
-  <section class="cs-section outcome-section">
+  <section class="cs-section outcome-section" id="measured-impact">
     <p class="eyebrow">Measured impact</p>
     <h2>The process did not just become more consistent. Readiness improved.</h2>
     <div class="outcome-list">
+      <div class="outcome-row">
+        <strong class="outcome-wide">56→83.2</strong>
+        <div>
+          <h3>Average readiness across the first five platform-supported openings</h3>
+          <p>The historical baseline consolidates the 24 openings completed before the platform launched.</p>
+        </div>
+      </div>
       <div class="outcome-row">
         <strong>35%</strong>
         <div>
@@ -193,14 +211,15 @@
     <div class="showcase">
       <p style="margin-top:0;">The production portal contains private employee and operational information. This public version recreates the product with entirely fictional people, locations, and opening details while preserving the core workflows and interaction design.</p>
       <p>Move through readiness checks, the training agenda, coach guidance, competency sign-offs, daily recaps, partner review, opening closeout, and the cross-opening insights that turn field activity into organizational learning.</p>
-      <a class="button button-primary" href="https://prismo1020.github.io/nso-portal/demo/">Launch the fictional NSO demo</a>
+      <a class="button button-primary" href="https://prismo1020.github.io/nso-portal/demo/" target="_blank" rel="noopener">Explore the sanitized interactive demo</a>
     </div>
     <a class="backlink" href="index.html#work">&larr; Back to all work</a>
   </section>
 </div>
+</main>
 
 <footer class="site-foot" id="contact">
-  <div class="wrap">
+  <div class="wrap closing-cta">
     <div>
       <h2>Let's talk.</h2>
       <p>Open to global L&amp;D, enablement, and learning strategy leadership roles.</p>
@@ -208,7 +227,7 @@
     <div class="contact-list">
       <a href="mailto:danielle.beram1@gmail.com">danielle.beram1@gmail.com</a>
       <a href="https://linkedin.com/in/danielle-beram">linkedin.com/in/danielle-beram</a>
-      <span style="color:#8f97ab;">San Antonio, TX</span>
+      <span>San Antonio, TX</span>
     </div>
   </div>
 </footer>
