@@ -944,11 +944,19 @@ strong { font-weight: 650; }
 
 .range-section {
   display: grid;
-  grid-template-columns: 0.72fr 1.28fr;
-  gap: clamp(2rem, 6vw, 5rem);
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(2.5rem, 5vw, 4.5rem);
+  align-items: center;
 }
 
-.range-section h2 { max-width: 11ch; }
+.range-section > div:first-child {
+  max-width: 34rem;
+  padding-left: clamp(0rem, 2vw, 1.5rem);
+}
+.range-section h2 {
+  max-width: 12ch;
+  font-size: clamp(2.8rem, 4.8vw, 4.8rem);
+}
 .range-links { border-top: 1px solid var(--rule); }
 .range-links a {
   display: grid;
@@ -1023,12 +1031,46 @@ strong { font-weight: 650; }
 .screenshot-feature div { display: grid; grid-template-columns: 180px 1fr; gap: 1rem; padding: 1rem 1.2rem; }
 .screenshot-feature strong { color: var(--navy); font-family: var(--display); }
 .screenshot-feature span { color: var(--ink-soft); font-size: 0.88rem; }
-.screenshot-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-top: 1rem; }
+.screenshot-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; margin-top: 1.25rem; }
 .screenshot-grid figure,
 .apollo-screens figure { margin: 0; overflow: hidden; border: 1px solid var(--rule); border-radius: 14px; background: var(--surface); }
-.screenshot-grid img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; object-position: top; }
+.screenshot-grid img { display: block; width: 100%; height: auto; aspect-ratio: auto; object-fit: contain; }
 .screenshot-grid figcaption,
 .apollo-screens figcaption { padding: 0.65rem 0.8rem; color: var(--ink-soft); font-size: 0.78rem; font-weight: 650; }
+
+.portal-gallery {
+  align-items: start;
+}
+
+.portal-gallery figure {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 12px 30px rgba(20, 42, 82, 0.07);
+}
+
+.portal-gallery figure:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+
+.portal-gallery figcaption {
+  display: grid;
+  gap: 0.25rem;
+  min-height: 76px;
+  padding: 0.9rem 1rem 1rem;
+}
+
+.portal-gallery figcaption strong {
+  color: var(--navy);
+  font-family: var(--display);
+  font-size: 1rem;
+}
+
+.portal-gallery figcaption span {
+  color: var(--ink-soft);
+  font-size: 0.79rem;
+  font-weight: 500;
+  line-height: 1.45;
+}
 
 .apollo-screens {
   display: grid;
@@ -1166,9 +1208,10 @@ strong { font-weight: 650; }
 .recruiter-summary-grid article { padding: 1.25rem; border: 1px solid var(--rule); border-radius: 14px; background: var(--surface); }
 .recruiter-summary-grid strong { color: var(--navy); font-family: var(--display); font-size: 1.15rem; }
 .recruiter-summary-grid p { margin: 0.45rem 0 0; color: var(--ink-soft); font-size: 0.88rem; }
-.fit-grid { display: grid; grid-template-columns: 1fr 0.8fr; gap: 4rem; padding: 4rem 0; border-top: 1px solid var(--rule); }
+.fit-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 0.95fr); gap: clamp(2.5rem, 5vw, 4rem); align-items: center; padding: 4rem clamp(0rem, 2vw, 1.5rem); border-top: 1px solid var(--rule); }
+.fit-grid > div:first-child { max-width: 38rem; }
 .fit-list { margin-top: 1.5rem; }
-.availability-card { display: grid; grid-template-columns: 115px 1fr; gap: 0.8rem 1rem; padding: 1.5rem; border-radius: 16px; color: #fff; background: var(--navy); align-self: start; }
+.availability-card { display: grid; grid-template-columns: 115px 1fr; gap: 0.8rem 1rem; width: 100%; padding: 1.65rem; border-radius: 16px; color: #fff; background: var(--navy); align-self: center; }
 .availability-card span { color: #9fb0ca; font-size: 0.75rem; }
 .availability-card strong { font-size: 0.88rem; }
 .contact-card { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin: 3rem 0 4rem; padding: clamp(2rem, 5vw, 4rem); border-radius: 20px; background: #eaf1fd; }
@@ -1278,6 +1321,7 @@ strong { font-weight: 650; }
   .screenshot-feature div,
   .evidence-basis { grid-template-columns: 1fr; }
   .screenshot-grid { grid-template-columns: 1fr; }
+  .portal-gallery figure:last-child:nth-child(odd) { grid-column: auto; }
   .apollo-screens { grid-template-columns: 1fr; }
   .apollo-screens img { height: auto; max-height: 620px; }
   .case-pagination a:last-child { text-align: left; }
