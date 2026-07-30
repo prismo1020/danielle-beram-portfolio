@@ -32,7 +32,7 @@
         <span class="sidebar-monogram" aria-hidden="true">DB</span>
         <span><strong>Danielle Beram</strong><small>Global L&D leader</small></span>
       </a>
-      <p class="sidebar-positioning">I make complex work easier to learn, coach, and repeat.</p>
+      <p class="sidebar-positioning">Global onboarding, new-store training, eLearning production, and AI knowledge support.</p>
       <nav class="sidebar-nav" aria-label="Primary navigation">${nav()}</nav>
       <div class="sidebar-recruiter">
         <span>Open to relocation</span>
@@ -40,7 +40,7 @@
         <a href="contact.html">Résumé & contact →</a>
       </div>
       <div class="sidebar-actions">
-        <a class="sidebar-resume" href="assets/downloads/Danielle_Beram_Resume.pdf" download>Download résumé</a>
+        <a class="sidebar-resume" href="assets/downloads/Danielle Beram Resume.pdf" download>Download résumé</a>
         <a href="https://linkedin.com/in/danielle-beram" target="_blank" rel="noopener">LinkedIn ↗</a>
       </div>
     </aside>

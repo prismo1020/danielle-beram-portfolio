@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>New Store Opening Portal | Danielle Beram</title>
-<meta name="description" content="How Danielle Beram created the New Store Opening Portal, built the operating process behind it, and improved readiness scores.">
+<meta name="description" content="A portal for managing new-store agendas, competency evidence, sign-offs, daily recaps, and readiness decisions.">
 <link rel="canonical" href="https://prismo1020.github.io/danielle-beram-portfolio/nso.html">
 <meta property="og:title" content="The New Store Opening Portal">
-<meta property="og:description" content="No process, no measurement system, and no engineering team, so Danielle Beram built all three.">
+<meta property="og:description" content="The first five portal-supported openings averaged 83.2 against a historical readiness baseline of 56.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://prismo1020.github.io/danielle-beram-portfolio/nso.html">
 <meta property="og:image" content="https://prismo1020.github.io/danielle-beram-portfolio/assets/og-human.png">
@@ -27,13 +27,13 @@
 <main id="main" class="case-main">
 <div class="wrap">
   <div class="cs-hero">
-    <p class="eyebrow">Product ownership · Operational enablement</p>
+    <p class="eyebrow">New-store readiness product</p>
     <h1>The New Store Opening Portal</h1>
-    <p class="hook">There was no standardized process to digitize. I created the process from scratch, built the production system that made it executable, and introduced the data needed to improve every opening that followed.</p>
+    <p class="hook">Coaches were using spreadsheets, paper, and personal notes to manage five-day openings. I defined the shared process and built the portal used to manage the agenda, evidence, sign-offs, daily recaps, and final review.</p>
     <table class="glance">
-      <tr><td>Role</td><td>Product owner, process architect, application builder, and rollout lead</td></tr>
-      <tr><td>Challenge</td><td>No standardized opening-support process, no consistent readiness measurement, and no engineering resources</td></tr>
-      <tr><td>What I did</td><td>Created the operating process, encoded it into a secure production portal, and built the measurement model from the ground up</td></tr>
+      <tr><td>Role</td><td>Process definition, requirements, application build, rollout, and iteration</td></tr>
+      <tr><td>Problem</td><td>No shared opening workflow or consistent method for recording readiness</td></tr>
+      <tr><td>Deliverable</td><td>A secure portal for the five-day agenda, competency evidence, sign-offs, recaps, partner review, and closeout</td></tr>
       <tr><td>Result</td><td>Average readiness rose from a 56 historical baseline to 83.2 across the first five platform-supported openings</td></tr>
     </table>
     <div class="hero-actions" style="margin-top:1.5rem;">
@@ -42,23 +42,37 @@
     </div>
   </div>
 
+  <section class="cs-section product-evidence" style="border-top:0; padding-top:1.5rem;">
+    <p class="eyebrow">The product</p>
+    <h2>The day, the evidence, and the next decision</h2>
+    <div class="screenshot-feature">
+      <img src="assets/screenshots/nso-dashboard.png" alt="Sanitized New Store Opening Portal dashboard showing Day 3 readiness, sign-offs, and learners needing follow-up" width="1920" height="1080" loading="lazy">
+      <div><strong>Dashboard</strong><span>The dashboard shows the current training day, scenario scores, completed sign-offs, launch timing, and learners who need follow-up.</span></div>
+    </div>
+    <div class="screenshot-grid portal-gallery">
+      <figure><img src="assets/screenshots/nso-agenda.png" alt="Training agenda with an expanded Say, See, Do coaching guide" width="1920" height="1080" loading="lazy"><figcaption><strong>Agenda + Say, See, Do</strong><span>Each agenda block shows the objective, coach guidance, practice prompts, and evidence to record.</span></figcaption></figure>
+      <figure><img src="assets/screenshots/nso-coach-guidance.png" alt="Coach guidance page in the sanitized New Store Opening Portal" width="1920" height="1080" loading="lazy"><figcaption><strong>Coach guidance</strong><span>Coaches can search guidance and review the standard before changing timing, grouping, or repetition.</span></figcaption></figure>
+      <figure><img src="assets/screenshots/nso-signoffs.png" alt="Competency sign-offs by learner and observed behavior" width="1920" height="1080" loading="lazy"><figcaption><strong>Competency sign-offs</strong><span>Each learner is marked against observed behaviors by day and competency.</span></figcaption></figure>
+      <figure><img src="assets/screenshots/nso-insights.png" alt="Readiness Insights showing before-and-after scores and decisions" width="1920" height="1080" loading="lazy"><figcaption><strong>Readiness insights</strong><span>The organizational view compares readiness scores and records the curriculum or coaching change made in response.</span></figcaption></figure>
+      <figure><img src="assets/screenshots/nso-recap.png" alt="Daily recap interface with stakeholder message preview" width="1920" height="1080" loading="lazy"><figcaption><strong>Daily recap</strong><span>The coach records progress, risks, and next actions, then copies a formatted stakeholder update.</span></figcaption></figure>
+    </div>
+  </section>
+
   <section class="cs-section" style="border-top:0; padding-top:1.5rem;">
-    <h2>The challenge</h2>
+    <h2>The decisions it supports</h2>
     <p>New Store Opening events are short, operationally intense, and full of decisions that matter after the coach leaves. Coaches develop multiple trainees, document readiness, complete recurring reviews, coordinate with local leadership, and formally close the event with the franchise partner.</p>
-    <p>Before the portal, those activities had no single digital system, and there was no fully defined process underneath them. Critical knowledge lived in spreadsheets, paper, and individual coaches' heads. Different openings could be coached, documented, and evaluated differently, leaving the organization with limited visibility into readiness and little usable data for improving the next launch.</p>
-    <p>There was no established workflow to automate. I had to define what a well-run opening should look like, agree on the important decisions and standards, and then build a place for that process to live.</p>
+    <p>Before the portal, those activities had no single digital system. The organization needed shared answers to five questions: what coaches did each day, what trainees had to demonstrate, what the franchise partner confirmed, what leaders needed in the daily recap, and what evidence remained after closeout.</p>
   </section>
 
   <section class="cs-section ownership-section">
-    <h2>My role</h2>
-    <p>I identified the gap and took ownership without being assigned the work. No requirements document, process specification, product team, engineering team, or development headcount existed.</p>
-    <p>I first created the operating model: what coaches should do across the five-day arc, what trainees must demonstrate, what the franchise partner must confirm, what information leaders need each day, and what evidence should survive after the opening closes.</p>
-    <p>I then translated that model into the information architecture, workflows, required fields, relational data, access boundaries, confirmation behavior, lifecycle rules, reporting, and field guardrails. I personally built and shipped the application.</p>
+    <h2>Defining readiness</h2>
+    <p>No product or engineering team was assigned to the project. I worked directly with the opening process, defined the requirements, and built the application.</p>
+    <p>Readiness had to be recorded as observable performance, not attendance or confidence. That decision shaped the competency criteria, scenario assessments, sign-offs, daily recaps, partner confirmations, and the cross-opening comparison view.</p>
   </section>
 
   <section class="cs-section">
-    <h2>The product</h2>
-    <p>The portal gives the opening process one dependable home. Coaches can see what needs to happen, what readiness looks like, what requires evidence, and what should be carried forward after the opening ends.</p>
+    <h2>How coaches use it</h2>
+    <p>The portal follows the opening from Day 0 preparation through the five-day agenda, competency checks, partner review, and final export.</p>
 
     <div class="feature-grid">
       <article>
@@ -94,30 +108,14 @@
     </div>
   </section>
 
-  <section class="cs-section product-evidence">
-    <p class="eyebrow">The product in use</p>
-    <h2>A coach can see the day, the evidence, and the next decision.</h2>
-    <div class="screenshot-feature">
-      <img src="assets/screenshots/nso-dashboard.png" alt="Sanitized New Store Opening Portal dashboard showing Day 3 readiness, sign-offs, and learners needing follow-up" width="1920" height="1080" loading="lazy">
-      <div><strong>Dashboard</strong><span>One view connects the training plan, scenario performance, competency evidence, and coach attention.</span></div>
-    </div>
-    <div class="screenshot-grid portal-gallery">
-      <figure><img src="assets/screenshots/nso-agenda.png" alt="Training agenda with an expanded Say, See, Do coaching guide" width="1920" height="1080" loading="lazy"><figcaption><strong>Agenda + Say, See, Do</strong><span>Each learning block connects the objective, coach guidance, practice, observable behavior, and evidence captured.</span></figcaption></figure>
-      <figure><img src="assets/screenshots/nso-coach-guidance.png" alt="Coach guidance page in the sanitized New Store Opening Portal" width="1920" height="1080" loading="lazy"><figcaption><strong>Coach guidance</strong><span>Practical guidance helps coaches adapt the method without losing the performance standard.</span></figcaption></figure>
-      <figure><img src="assets/screenshots/nso-signoffs.png" alt="Competency sign-offs by learner and observed behavior" width="1920" height="1080" loading="lazy"><figcaption><strong>Competency sign-offs</strong><span>Readiness is based on observed behavior by learner, day, and competency—not attendance alone.</span></figcaption></figure>
-      <figure><img src="assets/screenshots/nso-insights.png" alt="Readiness Insights showing before-and-after scores and decisions" width="1920" height="1080" loading="lazy"><figcaption><strong>Readiness insights</strong><span>Cross-opening evidence shows what changed, where a gap repeated, and what should happen next.</span></figcaption></figure>
-      <figure><img src="assets/screenshots/nso-recap.png" alt="Daily recap interface with stakeholder message preview" width="1920" height="1080" loading="lazy"><figcaption><strong>Daily recap</strong><span>Field observations become an immediate coaching adjustment and a consistent stakeholder update.</span></figcaption></figure>
-    </div>
-  </section>
-
   <section class="cs-section">
-    <h2>The approach</h2>
+    <h2>How the workflow works</h2>
 
-    <h3>Encoded the coaching model, not just the data</h3>
-    <p>Every field and workflow reflects a decision about what coaches must do, what trainees must demonstrate, what requires confirmation, and what the organization needs to retain. I converted fragmented institutional knowledge into one explicit, repeatable operating standard.</p>
+    <h3>Required evidence follows the agenda</h3>
+    <p>Each training block identifies what the coach should explain, what the learner should practice, what the coach should observe, and what evidence should be recorded.</p>
 
-    <h3>Designed secure access around field ownership</h3>
-    <p>The application uses Supabase authentication, Postgres, and database-level row security. Coaches work only with openings assigned to them, while administrators retain organizational visibility. Related records inherit access through their parent opening, keeping the permission model aligned with operational ownership.</p>
+    <h3>Access follows the assigned opening</h3>
+    <p>The application uses Supabase authentication, Postgres, and database-level row security. Coaches work only with openings assigned to them, while administrators can review records across openings.</p>
 
     <h3>Preserved the integrity of formal confirmations</h3>
     <p>Stable record identifiers prevent duplicate checklist and sign-off entries. Names, dates, and first-confirmation timestamps create a more dependable operational history without silently replacing the original confirmation moment.</p>
@@ -126,10 +124,10 @@
     <p>The portal includes a shared-iPad warning, prominent sign-out controls, automatic sign-out after inactivity, required-field validation, and guardrails that prevent actions from being recorded without an active opening.</p>
 
     <h3>Chose maintainability over unnecessary complexity</h3>
-    <p>I built the front end in browser-native HTML, CSS, and JavaScript, with Supabase as the managed backend and GitHub Pages for deployment. With no framework, build system, or dependency tree, the application remains practical for a solo product owner to maintain.</p>
+    <p>I built the front end in browser-native HTML, CSS, and JavaScript, with Supabase as the managed backend and GitHub Pages for deployment. The codebase remains limited to browser-native files plus the managed backend, which I maintain without a separate engineering team.</p>
 
-    <h3>Made every opening measurable</h3>
-    <p>The portal captures competency performance, readiness checks, scenario-based assessment results, daily operational recaps, process-confusion escalations, formal confirmations, and opening outcomes in a consistent structure. For the first time, those signals could be compared across openings and used to change the curriculum, coaching emphasis, and readiness standards for future launches.</p>
+    <h3>The same measures are recorded for each opening</h3>
+    <p>The portal records competency performance, readiness checks, scenario assessments, daily recaps, process-confusion escalations, formal confirmations, and opening outcomes. Those fields allow the same measures to be compared across openings.</p>
   </section>
 
   <section class="cs-section">
@@ -159,20 +157,14 @@
     </div>
   </section>
 
-  <section class="cs-section">
-    <h2>Product iteration</h2>
-    <p>The portal has evolved through multiple releases based on real field use and stakeholder input. Improvements have included shared-device protections, dual-party confirmations, planned-versus-actual date capture, variance notes, expanded setup, workflow guardrails, leadership training, scorecards, and broader administrative export.</p>
-    <p>These were not isolated feature requests. Each iteration responded to a gap in how an opening was prepared, coached, documented, or reviewed.</p>
-  </section>
-
   <blockquote class="evidence-quote">
     <p>“I have now completed three openings using the portal, and I genuinely would not want to run another opening without it… By the end of the opening, I know the work has been captured properly and that nothing important has disappeared into someone’s personal notes.”</p>
     <cite>NSO Coach · exact feedback-survey quotation</cite>
   </blockquote>
 
   <section class="cs-section outcome-section" id="measured-impact">
-    <p class="eyebrow">Measured impact</p>
-    <h2>The process became more consistent, and readiness improved with it.</h2>
+    <p class="eyebrow">Readiness comparison</p>
+    <h2>What the first five openings showed</h2>
     <div class="outcome-list">
       <div class="outcome-row">
         <strong class="outcome-wide">56→83.2</strong>
@@ -196,34 +188,22 @@
         </div>
       </div>
     </div>
-    <p>Across the first five openings using the portal, technical and operational readiness were not merely maintained during standardization. They improved. The openings also saw fewer process-confusion escalations, fewer opening-weekend refunds, and stronger customer-review patterns.</p>
-    <p>The trainers using the system have become some of its strongest advocates, providing enthusiastic feedback about the clarity and usability of the workflow.</p>
+    <p>The comparison covers 24 historical openings and the first five openings supported by the portal. It shows an average difference during the initial rollout; it does not isolate the portal from the curriculum, coach guidance, or other changes introduced at the same time.</p>
     <p class="note">Readiness improvements are average changes observed across the first five portal-supported openings using the stated measurement sources.</p>
   </section>
 
   <section class="cs-section">
-    <h2>From isolated openings to a learning system</h2>
-    <p>Previously, one opening generated activity but little structured organizational learning. The portal changed that. Sign-offs, assessments, recaps, escalations, partner reviews, and opening outcomes now create a shared evidence base.</p>
-    <p>That data makes it possible to identify recurring readiness gaps, strengthen future agendas, refine competency standards, target coach guidance, and compare what changed from one opening to the next. The result is not only a better-run opening. It is an opening process that can keep getting better.</p>
-  </section>
-
-  <section class="cs-section">
-    <h2>What this demonstrates</h2>
-    <ul>
-      <li><strong>Product ownership:</strong> identifying an unmet need, defining the product, shipping it, and continuing to improve it.</li>
-      <li><strong>Systems thinking:</strong> connecting curriculum, field workflow, permissions, lifecycle states, confirmations, and reporting.</li>
-      <li><strong>Applied domain expertise:</strong> turning the reality of coaching an opening into a usable digital operating model.</li>
-      <li><strong>Technical breadth:</strong> designing relational data, implementing access controls, building the interface and data layer, and managing deployment.</li>
-      <li><strong>AI-accelerated delivery:</strong> using Claude Code to increase implementation speed while retaining ownership of requirements, product judgment, testing, and quality.</li>
-    </ul>
+    <h2>What changed after launch</h2>
+    <p>Field use led to shared-device protections, dual-party confirmations, planned-versus-actual date capture, variance notes, expanded setup, scorecards, and a broader administrative export.</p>
+    <p>Sign-offs, assessments, recaps, escalations, partner reviews, and opening outcomes now remain available after closeout. They can be reviewed when the curriculum, coach guidance, or readiness criteria are updated for a later opening.</p>
   </section>
 
   <section class="cs-section">
     <p class="eyebrow">Interactive product demo</p>
-    <h2>Explore the operating system in action</h2>
+    <h2>Explore the portal</h2>
     <div class="showcase">
       <p style="margin-top:0;">The production portal contains private employee and operational information. This public version recreates the product with entirely fictional people, locations, and opening details while preserving the core workflows and interaction design.</p>
-      <p>Move through readiness checks, the training agenda, coach guidance, competency sign-offs, daily recaps, partner review, opening closeout, and the cross-opening insights that turn field activity into organizational learning.</p>
+      <p>Move through readiness checks, the training agenda, coach guidance, competency sign-offs, daily recaps, partner review, opening closeout, and the cross-opening comparison view.</p>
       <a class="button button-primary" href="https://prismo1020.github.io/nso-portal/demo/" target="_blank" rel="noopener">Explore the sanitized interactive demo</a>
     </div>
     <nav class="case-pagination" aria-label="Case study navigation">
@@ -237,11 +217,11 @@
 <footer class="site-foot" id="contact">
   <div class="wrap closing-cta">
     <div>
-      <h2>Let's talk.</h2>
-      <p>Open to global L&amp;D, enablement, and learning strategy leadership roles.</p>
+      <h2>Résumé and contact</h2>
+      <p>Role range, relocation preferences, résumé, email, and LinkedIn are available on the contact page.</p>
     </div>
     <div class="contact-list">
-      <a class="button button-light" href="assets/downloads/Danielle_Beram_Resume.pdf" download>Download Résumé</a>
+      <a class="button button-light" href="assets/downloads/Danielle Beram Resume.pdf" download>Download Résumé</a>
       <a class="button button-light" href="https://linkedin.com/in/danielle-beram" target="_blank" rel="noopener">Connect on LinkedIn ↗</a>
       <span class="contact-email">danielle.beram1@gmail.com</span>
       <span>San Antonio, TX</span>
