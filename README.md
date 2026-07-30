@@ -11,7 +11,7 @@ A static portfolio site covering global onboarding, new-store training, eLearnin
 - `apollo.html`: knowledge-source, correction, and maintenance case study for the internal AI assistant
 - `elearning.html`: eLearning production workflow and 54-module catalog
 - `training.html`: 14-day to 5-day new-store training redesign
-- `contact.html`: résumé, role fit, relocation, and contact information
+- `contact.html`: résumé, professional scope, relocation, and contact information
 - `css/style.css`: all styling (edit colors and type here)
 - `assets/headshot.png`: portrait
 - `assets/og-human.png`: social sharing preview
