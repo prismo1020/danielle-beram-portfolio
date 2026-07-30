@@ -6,6 +6,7 @@
   const items = [
     { group: "Start", label: "Start Here", href: "index.html" },
     { group: "Start", label: "About Danielle", href: "about.html" },
+    { group: "Case studies", label: "Onboarding System", href: "onboarding.html" },
     { group: "Case studies", label: "Global eLearning", href: "elearning.html" },
     { group: "Case studies", label: "New Store Opening Portal", href: "nso.html" },
     { group: "Case studies", label: "Apollo AI", href: "apollo.html" },
@@ -31,7 +32,7 @@
         <span class="sidebar-monogram" aria-hidden="true">DB</span>
         <span><strong>Danielle Beram</strong><small>Global L&D leader</small></span>
       </a>
-      <p class="sidebar-positioning">New-store training, eLearning production, and AI knowledge support.</p>
+      <p class="sidebar-positioning">Global onboarding, new-store training, eLearning production, and AI knowledge support.</p>
       <nav class="sidebar-nav" aria-label="Primary navigation">${nav()}</nav>
       <div class="sidebar-recruiter">
         <span>Open to relocation</span>
