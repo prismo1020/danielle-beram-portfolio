@@ -11,7 +11,6 @@
     { group: "Case studies", label: "Apollo AI", href: "apollo.html" },
     { group: "Case studies", label: "Global eLearning", href: "elearning.html" },
     { group: "Case studies", label: "Training Redesign", href: "training.html" },
-    { group: "Case studies", label: "Leadership Development", href: "leadership.html" },
     { group: "Recruiter", label: "Résumé & Contact", href: "contact.html" }
   ];
 
@@ -33,12 +32,12 @@
         <span class="sidebar-monogram" aria-hidden="true">DB</span>
         <span><strong>Danielle Beram</strong><small>Global L&D leader</small></span>
       </a>
-      <p class="sidebar-positioning">I build learning systems that turn growth into consistent performance.</p>
+      <p class="sidebar-positioning">I make complex work easier to learn, coach, and repeat.</p>
       <nav class="sidebar-nav" aria-label="Primary navigation">${nav()}</nav>
       <div class="sidebar-recruiter">
         <span>Open to relocation</span>
         <strong>Hiring for L&D leadership?</strong>
-        <a href="contact.html">Start here →</a>
+        <a href="contact.html">Résumé & contact →</a>
       </div>
       <div class="sidebar-actions">
         <a class="sidebar-resume" href="assets/downloads/Danielle_Beram_Resume.pdf" download>Download résumé</a>
