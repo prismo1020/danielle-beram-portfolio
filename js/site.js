@@ -35,7 +35,7 @@
       <nav class="sidebar-nav" aria-label="Primary navigation">${nav()}</nav>
       <div class="sidebar-recruiter">
         <span>Open to relocation</span>
-        <strong>Hiring for L&D leadership?</strong>
+        <strong>Global learning, operations, and AI enablement</strong>
         <a href="contact.html">Résumé & contact →</a>
       </div>
       <div class="sidebar-actions">
