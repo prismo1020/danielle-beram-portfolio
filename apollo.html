@@ -10,29 +10,19 @@
 <meta property="og:description" content="How Danielle Beram built and governs an AI-enabled knowledge experience across 90 locations and five languages.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://prismo1020.github.io/danielle-beram-portfolio/apollo.html">
-<meta property="og:image" content="https://prismo1020.github.io/danielle-beram-portfolio/assets/og-v2.png">
+<meta property="og:image" content="https://prismo1020.github.io/danielle-beram-portfolio/assets/og-sidebar.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#142a52">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=20260729-resume">
+<link rel="stylesheet" href="css/style.css?v=20260729-sidebar">
+<script defer src="js/site.js?v=20260729-sidebar"></script>
 </head>
-<body>
+<body class="has-sidebar">
 
 <a class="skip-link" href="#main">Skip to main content</a>
-<div class="site-shell">
-  <header class="site wrap case-header">
-    <a class="brand" href="index.html" aria-label="Danielle Beram, home"><span class="brand-mark" aria-hidden="true">DB</span><span class="brand-name">Danielle Beram</span></a>
-    <nav aria-label="Primary navigation">
-      <a href="index.html#work">Work</a>
-      <a href="index.html#about">About</a>
-      <a href="https://linkedin.com/in/danielle-beram" target="_blank" rel="noopener">LinkedIn ↗</a>
-      <span class="nav-email">danielle.beram1@gmail.com</span>
-      <a class="nav-cta" href="assets/downloads/Danielle_Beram_Resume.pdf" download>Download Résumé</a>
-    </nav>
-  </header>
-</div>
+<div id="site-navigation"></div>
 
 <main id="main" class="case-main">
 <div class="wrap">
@@ -54,10 +44,20 @@
     <p>Across 90 corporate and franchise locations operating in five languages, that added up to a constant stream of avoidable escalations and inconsistent answers, where the response you got depended on who you happened to ask. Knowledge existed, but it was not reachable at the moment of need. Process confusion accounted for roughly 40% of all escalated tickets.</p>
   </section>
 
-  <section class="cs-section">
+  <section class="cs-section ownership-section">
     <h2>My role</h2>
     <p>I set the product direction for Apollo and lead the operating model behind it: use-case definition, knowledge architecture, answer boundaries, content ownership, governance, and adoption across the network. I also built the initial implementation, which gave me direct insight into how information structure and frontline behavior affect answer quality.</p>
     <p>The work requires ongoing partnership with operations, product, support, and subject-matter owners. My role is to turn those inputs into one trusted experience while maintaining clear accountability for what Apollo can answer and how quickly its source content changes.</p>
+  </section>
+
+  <section class="cs-section product-evidence">
+    <p class="eyebrow">Sanitized product evidence</p>
+    <h2>The answer, its source, and the trust boundary are visible.</h2>
+    <div class="apollo-screens">
+      <figure><img src="assets/screenshots/apollo-interface.png" alt="Apollo chat interface with example operational prompts" width="425" height="681" loading="lazy"><figcaption>Entry point</figcaption></figure>
+      <figure><img src="assets/screenshots/apollo-answer.png" alt="Apollo answering a guest-journey question" width="420" height="672" loading="lazy"><figcaption>Grounded answer</figcaption></figure>
+      <figure class="source-shot"><img src="assets/screenshots/apollo-sources.png" alt="Apollo source panel showing approved knowledge documents" width="778" height="858" loading="lazy"><figcaption>Visible sources</figcaption></figure>
+    </div>
   </section>
 
   <section class="cs-section">
@@ -125,6 +125,11 @@
     </div>
   </section>
 
+  <blockquote class="evidence-quote">
+    <p>“The biggest improvement for me is consistency… Apollo gives the same answer from the same approved source regardless of who asks or where they work.”</p>
+    <cite>Multi-Unit Leader · exact feedback-survey quotation</cite>
+  </blockquote>
+
   <section class="cs-section">
     <h2>The outcome</h2>
 
@@ -164,7 +169,10 @@
         <li>A diagram of how Apollo retrieves from the governed knowledge base to produce a grounded answer</li>
       </ul>
     </div>
-    <a class="backlink" href="index.html#work">&larr; Back to all work</a>
+    <nav class="case-pagination" aria-label="Case study navigation">
+      <a href="nso.html"><span>Previous case</span><strong>← NSO Portal</strong></a>
+      <a href="elearning.html"><span>Next case</span><strong>Global eLearning →</strong></a>
+    </nav>
   </section>
 </div>
 </main>

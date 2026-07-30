@@ -9,6 +9,10 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://prismo1020.github.io/danielle-beram-portfolio/onboarding.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://prismo1020.github.io/danielle-beram-portfolio/training.html</loc>
     <priority>0.8</priority>
   </url>
@@ -18,6 +22,18 @@
   </url>
   <url>
     <loc>https://prismo1020.github.io/danielle-beram-portfolio/elearning.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://prismo1020.github.io/danielle-beram-portfolio/leadership.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://prismo1020.github.io/danielle-beram-portfolio/about.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://prismo1020.github.io/danielle-beram-portfolio/contact.html</loc>
     <priority>0.8</priority>
   </url>
 </urlset>
