@@ -818,6 +818,12 @@ strong { font-weight: 650; }
   box-shadow: 0 0 0 5px rgba(22, 160, 109, 0.12);
 }
 
+.executive-copy .hero-actions {
+  margin-top: 1.65rem;
+  column-gap: 1rem;
+  row-gap: 0.9rem;
+}
+
 .executive-portrait {
   position: relative;
   min-height: 480px;
