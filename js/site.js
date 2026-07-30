@@ -6,9 +6,9 @@
   const items = [
     { group: "Start", label: "Start Here", href: "index.html" },
     { group: "Start", label: "About Danielle", href: "about.html" },
+    { group: "Case studies", label: "Global eLearning", href: "elearning.html" },
     { group: "Case studies", label: "New Store Opening Portal", href: "nso.html" },
     { group: "Case studies", label: "Apollo AI", href: "apollo.html" },
-    { group: "Case studies", label: "Global eLearning", href: "elearning.html" },
     { group: "Case studies", label: "Training Redesign", href: "training.html" },
     { group: "Recruiter", label: "Résumé & Contact", href: "contact.html" }
   ];
