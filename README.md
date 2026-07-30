@@ -1,15 +1,21 @@
-# Danielle Beram: Learning Systems Portfolio
+# Danielle Beram: Learning & Development Portfolio
 
-A static portfolio site for a global learning systems, enablement, and product leader. The site is built for GitHub Pages with no build step or dependencies.
+A static portfolio site covering global onboarding, new-store training, eLearning production, an internal AI knowledge assistant, and career history. The site is built for GitHub Pages with no build step or dependencies.
 
 ## Files
 
-- `index.html`: positioning, impact, flagship NSO platform, connected system, work, leadership, about, and contact
-- `nso.html`, `training.html`, `apollo.html`, `elearning.html`: case study pages
+- `index.html`: portfolio overview, selected work, metrics, and recruiter shortcut
+- `about.html`: career progression, leadership scope, regions supported, and personal interests
+- `onboarding.html`: chronological case study of the first 90 days
+- `nso.html`: product case study for the New Store Opening Portal
+- `apollo.html`: knowledge-source, correction, and maintenance case study for the internal AI assistant
+- `elearning.html`: eLearning production workflow and 54-module catalog
+- `training.html`: 14-day to 5-day new-store training redesign
+- `contact.html`: résumé, role fit, relocation, and contact information
 - `css/style.css`: all styling (edit colors and type here)
 - `assets/headshot.png`: portrait
-- `assets/og-v2.png`: social sharing preview
-- `BRAND-KIT.md`: brand strategy, voice, typography, color, and layout guidance
+- `assets/og-human.png`: social sharing preview
+- `BRAND-KIT.md`: editorial standards, voice, typography, color, and layout guidance
 - `TOMORROW-CHECKLIST.md`: manual evidence and assets still needed
 - `robots.txt`, `sitemap.xml`, `404.html`: search and site-quality support
 
@@ -32,4 +38,4 @@ To use a custom domain later, add it under Settings, then Pages, then "Custom do
 - Colors and fonts live at the top of `css/style.css` in the `:root` block. Change a value once and it updates everywhere.
 - Read `BRAND-KIT.md` before changing the visual system or writing new copy.
 - Text content is in the `.html` files. Case study copy is plain and easy to edit.
-- To add a fourth case study, copy one of the case study HTML files, change the content, and add a matching card to the "Selected work" section in `index.html`.
+- To add another case study, copy the page whose evidence type is most similar, then change the structure so the narrative fits the new work rather than repeating the same headings.

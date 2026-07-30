@@ -1,28 +1,28 @@
 # Danielle Beram Brand Kit
 
-## Brand idea
+## Editorial principle
 
-**The operator who builds the system.**
+**Let the work explain the work.**
 
-Danielle's brand sits at the intersection of operational leadership, learning strategy, product ownership, and hands-on creation. The visual identity should feel human enough for learning and leadership, structured enough for systems work, and bold enough to reflect someone who builds what does not yet exist.
+The portfolio should sound like an experienced Learning & Development leader explaining work she completed. Use operational details, named artifacts, comparison groups, and measured results before interpretation. The visual identity should remain human, structured, and evidence-led.
 
-## Positioning
+## Public summary
 
 ### Primary statement
 
-I build the learning products and operating systems that make growth repeatable.
+I build training programs people use.
 
 ### Supporting statement
 
-I turn operational complexity into clear processes, useful products, field capability, and measurable performance.
+My recent work includes global onboarding, new-store training, eLearning production, and an internal AI knowledge assistant.
 
 ### Short descriptor
 
-Global learning systems · enablement · product
+Senior Global Learning & Development Program Manager
 
-### Brand promise
+### Evidence standard
 
-Strategy that becomes something people can use.
+State the problem, role, artifact, result, comparison basis, and limitation.
 
 ## Personality
 
@@ -39,7 +39,7 @@ Strategy that becomes something people can use.
 ### Use
 
 - Short declarative sentences
-- Concrete verbs: built, created, reduced, launched, measured, governed
+- Concrete verbs: built, created, reduced, launched, measured, approved, corrected
 - Specific scope and constraints
 - Plain explanations of technical decisions
 - Evidence immediately after a claim
@@ -112,7 +112,7 @@ The orange-red communicates initiative. Blue is reserved for proof. Green is res
 - Fewer cards, with more variation in scale and composition
 - Real artifacts before decorative visuals
 - Generous negative space
-- Clear borders and grids that suggest systems thinking
+- Clear borders and grids that reflect process structure
 - Rounded corners used selectively, not everywhere
 
 ## Image direction
@@ -144,8 +144,8 @@ Avoid:
 
 ## Core message hierarchy
 
-1. Danielle builds systems, not isolated courses.
-2. Her work begins with real operational constraints.
-3. She owns strategy and implementation.
-4. People use what she builds.
-5. Performance improves and becomes measurable.
+1. State the operational problem.
+2. Name Danielle's role and the people involved.
+3. Show the artifact or workflow.
+4. Present the result and comparison basis.
+5. State the limit on attribution or the evidence still missing.
