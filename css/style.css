@@ -447,6 +447,8 @@ strong { font-weight: 650; }
 .closing-cta p { color: #ffe5dc; max-width: 40rem; margin-top: 1rem; }
 .contact-list { display: flex; flex-direction: column; align-items: flex-start; gap: 0.45rem; }
 .contact-list a { color: #fff; font-weight: 600; }
+.contact-list a.button-light { color: var(--navy); }
+.contact-list a.button-light:hover { color: var(--navy); }
 .contact-list span { color: #ffe3da; }
 .contact-list .contact-email { color: #fff; font-family: var(--mono); font-size: 0.88rem; user-select: all; }
 
