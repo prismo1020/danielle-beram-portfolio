@@ -10,29 +10,19 @@
 <meta property="og:description" content="No process, no measurement system, and no engineering team, so Danielle Beram built all three.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://prismo1020.github.io/danielle-beram-portfolio/nso.html">
-<meta property="og:image" content="https://prismo1020.github.io/danielle-beram-portfolio/assets/og-v2.png">
+<meta property="og:image" content="https://prismo1020.github.io/danielle-beram-portfolio/assets/og-sidebar.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#142a52">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=20260729-resume">
+<link rel="stylesheet" href="css/style.css?v=20260729-sidebar">
+<script defer src="js/site.js?v=20260729-sidebar"></script>
 </head>
-<body>
+<body class="has-sidebar">
 
 <a class="skip-link" href="#main">Skip to main content</a>
-<div class="site-shell">
-  <header class="site wrap case-header">
-    <a class="brand" href="index.html" aria-label="Danielle Beram, home"><span class="brand-mark" aria-hidden="true">DB</span><span class="brand-name">Danielle Beram</span></a>
-    <nav aria-label="Primary navigation">
-      <a href="index.html#work">Work</a>
-      <a href="index.html#about">About</a>
-      <a href="https://linkedin.com/in/danielle-beram" target="_blank" rel="noopener">LinkedIn ↗</a>
-      <span class="nav-email">danielle.beram1@gmail.com</span>
-      <a class="nav-cta" href="assets/downloads/Danielle_Beram_Resume.pdf" download>Download Résumé</a>
-    </nav>
-  </header>
-</div>
+<div id="site-navigation"></div>
 
 <main id="main" class="case-main">
 <div class="wrap">
@@ -59,7 +49,7 @@
     <p>I did not automate an established workflow. I defined what good opening support should look like, established the standards and decision points, and then built the system that made the new process repeatable.</p>
   </section>
 
-  <section class="cs-section">
+  <section class="cs-section ownership-section">
     <h2>My role</h2>
     <p>I identified the gap and took ownership without being assigned the work. No requirements document, process specification, product team, engineering team, or development headcount existed.</p>
     <p>I first created the operating model: what coaches should do across the five-day arc, what trainees must demonstrate, what the franchise partner must confirm, what information leaders need each day, and what evidence should survive after the opening closes.</p>
@@ -101,6 +91,22 @@
         <h3>Learn</h3>
         <p>Completed-opening history and administrative export for organizational review.</p>
       </article>
+    </div>
+  </section>
+
+  <section class="cs-section product-evidence">
+    <p class="eyebrow">The product in use</p>
+    <h2>A coach can see the day, the evidence, and the next decision.</h2>
+    <div class="screenshot-feature">
+      <img src="assets/screenshots/nso-dashboard.png" alt="Sanitized NSO Coach Portal dashboard showing Day 3 readiness, sign-offs, and learners needing follow-up" width="1920" height="1080" loading="lazy">
+      <div><strong>Dashboard</strong><span>One view connects the training plan, scenario performance, competency evidence, and coach attention.</span></div>
+    </div>
+    <div class="screenshot-grid">
+      <figure><img src="assets/screenshots/nso-agenda.png" alt="Training agenda with an expanded Say, See, Do coaching guide" width="1920" height="1080" loading="lazy"><figcaption>Agenda + Say, See, Do</figcaption></figure>
+      <figure><img src="assets/screenshots/nso-coach-guidance.png" alt="Coach guidance page in the sanitized NSO portal" width="1920" height="1080" loading="lazy"><figcaption>Coach guidance</figcaption></figure>
+      <figure><img src="assets/screenshots/nso-signoffs.png" alt="Competency sign-offs by learner and observed behavior" width="1920" height="1080" loading="lazy"><figcaption>Competency sign-offs</figcaption></figure>
+      <figure><img src="assets/screenshots/nso-insights.png" alt="Readiness Insights showing before-and-after scores and decisions" width="1920" height="1080" loading="lazy"><figcaption>Readiness insights</figcaption></figure>
+      <figure><img src="assets/screenshots/nso-recap.png" alt="Daily recap interface with stakeholder message preview" width="1920" height="1080" loading="lazy"><figcaption>Daily recap</figcaption></figure>
     </div>
   </section>
 
@@ -159,6 +165,11 @@
     <p>These were not isolated feature requests. Each iteration responded to a gap in how an opening was prepared, coached, documented, or reviewed.</p>
   </section>
 
+  <blockquote class="evidence-quote">
+    <p>“I have now completed three openings using the portal, and I genuinely would not want to run another opening without it… By the end of the opening, I know the work has been captured properly and that nothing important has disappeared into someone’s personal notes.”</p>
+    <cite>NSO Coach · exact feedback-survey quotation</cite>
+  </blockquote>
+
   <section class="cs-section outcome-section" id="measured-impact">
     <p class="eyebrow">Measured impact</p>
     <h2>The process did not just become more consistent. Readiness improved.</h2>
@@ -215,7 +226,10 @@
       <p>Move through readiness checks, the training agenda, coach guidance, competency sign-offs, daily recaps, partner review, opening closeout, and the cross-opening insights that turn field activity into organizational learning.</p>
       <a class="button button-primary" href="https://prismo1020.github.io/nso-portal/demo/" target="_blank" rel="noopener">Explore the sanitized interactive demo</a>
     </div>
-    <a class="backlink" href="index.html#work">&larr; Back to all work</a>
+    <nav class="case-pagination" aria-label="Case study navigation">
+      <a href="onboarding.html"><span>Previous case</span><strong>← Onboarding System</strong></a>
+      <a href="apollo.html"><span>Next case</span><strong>Apollo AI →</strong></a>
+    </nav>
   </section>
 </div>
 </main>
