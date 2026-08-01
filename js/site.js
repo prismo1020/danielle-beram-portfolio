@@ -9,7 +9,7 @@
     { group: "Case studies", label: "Onboarding System", href: "onboarding.html" },
     { group: "Case studies", label: "Global eLearning", href: "elearning.html" },
     { group: "Case studies", label: "New Store Opening Portal", href: "nso.html" },
-    { group: "Case studies", label: "Apollo AI", href: "apollo.html" },
+    { group: "Case studies", label: "Apollo AI Knowledge System", href: "apollo.html" },
     { group: "Case studies", label: "Training Redesign", href: "training.html" },
     { group: "Recruiter", label: "Résumé & Contact", href: "contact.html" }
   ];
