@@ -61,7 +61,7 @@ Ideal first gallery: three courses that demonstrate different strengths, such as
 
 ## Product evidence
 
-### 5. Apollo
+### 5. Apollo AI knowledge system
 
 Provide any public-safe version of:
 
@@ -71,7 +71,7 @@ Provide any public-safe version of:
 - Knowledge governance workflow
 - Feedback from a frontline user or manager
 
-If no public screenshot exists, we can build a sanitized interactive Apollo demonstration.
+If no public screenshot exists, we can build a sanitized interactive Apollo AI knowledge system demonstration.
 
 ### 6. eLearning production
 

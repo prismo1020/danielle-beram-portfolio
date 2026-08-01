@@ -14,7 +14,7 @@ I build training programs people use.
 
 ### Supporting statement
 
-My recent work includes global onboarding, new-store training, eLearning production, and an internal AI knowledge assistant.
+My recent work includes global onboarding, new-store training, eLearning production, and an internal AI knowledge system.
 
 ### Short descriptor
 
