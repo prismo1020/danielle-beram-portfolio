@@ -53,3 +53,15 @@
     </header>
   `;
 })();
+
+// Load the same chat widget on every portfolio page without editing each HTML file.
+(() => {
+  const css = document.createElement("link");
+  css.rel = "stylesheet";
+  css.href = "css/ask-danielle.css?v=1";
+  document.head.appendChild(css);
+
+  const script = document.createElement("script");
+  script.src = "js/ask-danielle.js?v=1";
+  document.body.appendChild(script);
+})();
