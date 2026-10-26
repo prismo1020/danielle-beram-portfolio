@@ -63,7 +63,14 @@ export default {
     if (request.headers.get("Origin") !== ORIGIN) {
       return new Response("Forbidden.", { status: 403 });
     }
-    if (request.method === "OPTIONS") return json({}, 204);
+    if (request.method === "OPTIONS") {
+      return new Response(null, { status: 204, headers: {
+        "Access-Control-Allow-Origin": ORIGIN,
+        "Access-Control-Allow-Methods": "POST, OPTIONS",
+        "Access-Control-Allow-Headers": "Content-Type",
+        "Vary": "Origin",
+      }});
+    }
     if (request.method !== "POST") return json({ error: "Method not allowed." }, 405);
     if (!request.headers.get("Content-Type")?.startsWith("application/json")) {
       return json({ error: "JSON required." }, 415);
