@@ -4,7 +4,7 @@
   // Change these TWO public values after deploying the Worker and creating Turnstile.
   // Never put a Cloudflare API token or Turnstile SECRET in this file.
   const API_URL = "https://ask-danielle.danielle-beram.workers.dev/chat";
-  const TURNSTILE_SITE_KEY = "REPLACE_WITH_TURNSTILE_SITE_KEY";
+  const TURNSTILE_SITE_KEY = "0x4AAAAAAFnPT49Z3d7w1XHk";
 
   // Do not show a nonfunctional widget while setup is incomplete.
   if (API_URL.includes("REPLACE_WITH") || TURNSTILE_SITE_KEY.includes("REPLACE_WITH")) return;
