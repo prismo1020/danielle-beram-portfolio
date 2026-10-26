@@ -1,0 +1,15 @@
+name = "ask-danielle"
+main = "src/index.js"
+compatibility_date = "2026-10-20"
+
+[ai]
+binding = "AI"
+
+# Approximate per-network-address limit; also protects the free AI allocation.
+[[ratelimits]]
+name = "CHAT_RATE_LIMIT"
+namespace_id = "13017"
+
+[ratelimits.simple]
+limit = 10
+period = 60
