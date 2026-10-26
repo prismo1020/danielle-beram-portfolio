@@ -3,7 +3,7 @@
 
   // Change these TWO public values after deploying the Worker and creating Turnstile.
   // Never put a Cloudflare API token or Turnstile SECRET in this file.
-  const API_URL = "https://REPLACE_WITH_WORKER_URL.workers.dev/chat";
+  const API_URL = "https://ask-danielle.danielle-beram.workers.dev/chat";
   const TURNSTILE_SITE_KEY = "REPLACE_WITH_TURNSTILE_SITE_KEY";
 
   // Do not show a nonfunctional widget while setup is incomplete.
